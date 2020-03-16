@@ -12,7 +12,6 @@ Fix text battery in status bar causing spam log
 Add tons of Navbar options from Omni, DU and ABC roms
 Add Various layout options for 2 and 3 Button Navbar (Compact, Left leaning, right Leaning)
 Arrow keys on Navbar while typing
-Customize the length of the navigation pill
 Add option to show/hide Navbar.
 Add Navbar longpress and double tap Actions for 3 button and 2 button type.
 Add left/right long swipe actions
