@@ -1,0 +1,34 @@
+PiXeN-OS Update 20200317
+
+Fixed AndroidAuto
+
+
+PiXeN-OS Update 20200316
+
+Changelog
+Upstream linux to 4.9.216
+Update kernel to Radioactive kernel 10.4.2
+Silent in Alert slider now mutes media too
+Allow Network speedmeter to use custom font
+Add AmbientDisplay tile
+Fix Ambient screen getting black on expanding notification
+Add back OOS screen recorder (users demand)
+Fix text battery in status bar causing spam log
+Add tons of Navbar options from Omni, DU and ABC roms
+Add Various layout options for 2 and 3 Button Navbar (Compact, Left leaning, right Leaning)
+Arrow keys on Navbar while typing
+Add option to show/hide Navbar.
+Add Navbar longpress and double tap Actions for 3 button and 2 button type.
+Add left/right long swipe actions
+Long swipe based on distance and timeout
+The actions include
+Kill app,
+powermenu,
+ringer,
+expand notification,
+Qs panel
+Volume Panel
+Screenshot
+Screen off
+Clear Notifications
+Custom apps etc
