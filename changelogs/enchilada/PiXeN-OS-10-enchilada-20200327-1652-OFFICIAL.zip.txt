@@ -1,0 +1,388 @@
+=======================
+     2020/03/27
+=======================
+
+
+   * device/oneplus/sdm845-common/
+e47398b prebuilts: Update Oneplus Camera, Cameraservice, Gallery, Screenrecorder
+d9e446b Import updated Ramdisk changes from Radioactive kernel
+
+   * frameworks/base/
+bb420511b55 Keyguard: Fix FOD overlapping with battery text
+539ce4878d5 SystemUI: Keyguard: reduce bottom text size
+85e72670545 Use gradient dialogue for System Reboot
+7fee03ca4aa fwb: Fix issue where back function was not working for Third Party apps.
+39d1755027a SystemUI: Port more Assist things from Pixel SystemUI
+713fa982648 Revert "Add colors to assistant animation"
+ab90b191ed1 Revert "SystemUI: assist: disable old Assistant animations"
+478244075cf SytemUI: fix qs page num calc again
+2a7e4e3483d SystemUI: fix qs page num calc algo
+
+   * packages/apps/NitrogenSettings/
+a187918 Doze: Fix typo
+
+   * packages/apps/Settings/
+13548d090b Correct string for charging sound
+
+=======================
+     2020/03/26
+=======================
+
+
+   * device/oneplus/sdm845-common/
+574e9a0 DeviceParts:Add USB-OTG Tile
+ea844ba BC: Build kernel with GCC 9.3
+
+=======================
+     2020/03/25
+=======================
+
+
+   * frameworks/base/
+e3d74ee7ca9 Revert "PowerManager: Add proximity check on wake"
+
+   * kernel/oneplus/sdm845/
+62912732c699 Apply display mode unconditionally after turning on panel.
+ffacf8289c2a drm: msm: Add support for display modes.
+3e908d836301 drm: msm: Restore previous display brightness when enabling display.
+82659991fc65 drm: msm: Add support for high brightness mode (HBM)
+8025a3fc84fe drm: msm: Symlink main DSI display sysfs to its parent (MDSS)
+342566f726ee Update to Radioactive 10.4.5
+929142fd9d36 Makefile:Regenerate
+f2dcfa334f4d Makefile: Properly handle Snapdragon LLVM options
+9a9c606e6f33 Revert "net/wireguard: add wireguard importer"
+5921858242a8 Synchronize codes for Oneplus 6T OxygenOS 10.3.1/ Oneplus 6 OxygenOS 10.3.1
+c853586022b5 asoc: codecs: Fix out of bounds access in register show functions
+5b443a79377f wcd934x: add null checks to prevent crash on hardware variants
+45d86a0c2a77 wcd934x: add speaker gain settings for 6T
+587d66afe412 wcd934x: remove speaker gain settings for 6T
+15564397dfff wcd934x: remove headphone gain options for 6T
+aa77a75e0b94 wcd934x: sound control: reset headphone digital gain to user value
+88fa616cdc09 wcd934x: add sound control
+79c603e3c70f techpack: audio import Synchronize codes for OP6_O2_BETA_30 and OP6T_O2_BETA_30
+add098ab7b2d Revert "techpack: audio: add sources from e8c85e2f03a155d1ee2455e70cf1371a7782770d Synchronize codes for Oneplus 6T OxygenOS 10.0.1/ Oneplus 6 OxygenOS 10.0.1"
+fdafb495e069 Revert "wcd934x: add sound control"
+829606ea99ce Revert "wcd934x: sound control: reset headphone digital gain to user value"
+dcddeb236275 Revert "wcd934x: remove headphone gain options for 6T"
+c34f816f936c Revert "wcd934x: remove speaker gain settings for 6T"
+7fe37f311c5f Revert "wcd934x: add speaker gain settings for 6T"
+5032bfbe3704 Revert "wcd934x: add null checks to prevent crash on hardware variants"
+2f636f58fbfa Revert "treewide: fix GCC 8.1 warnings"
+2c99ea4b6141 Revert "max98927: stop log spam"
+5f062dfa860e Revert "asoc: codecs: Fix out of bounds access in register show functions"
+d8dd3800f52a Revert "techpack: add missing files"
+d1c55839fb8b Revert "Synchronize codes for Oneplus 6T OxygenOS 10.3.1/ Oneplus 6 OxygenOS 10.3.1"
+469c5f0ea8a2 drivers/cpufreq/cpu_input_boost.c : Switch Dynamic Schedtune Boost to a slot-based tracking system
+c7547ac1534e defconfig regenerate
+380569cdb5b8 msm: kgsl: Remove POPP
+19c21386740d devfreq: devbw: Do a full checkout to LA.UM.6.3.r4-04700-sdm845.0
+486ead290c76 defconfig regenerate
+b4b24d039eea schedtune: use more boost slots
+c1eb3d46b0aa drm: msm: sde: Boost cpubw devfreq device when a new frame is ready
+b9bc5225ffb5 kernel: Boost cpubw devfreq device to the max for app launches
+ce9001e94a6c devfreq: Introduce devfreq boost driver
+748bc60eb941 devfreq: devbw: remove more OnePlus's QoS shit code
+6ca164e44b39 ARM: dts: msm8998: Set GPU idle timeout to 64 ms
+4423128a7da2 cpu_input_boost: Destroy workqueue on error path in init
+795a8db12ab4 Decrease time to enter sleep
+efd5820726fa cpu_input_boost: Reset Dynamic SchedTune Boost only if it is currently active
+c8658e6f8290 cpu_input_boost: Implement Dynamic SchedTune Boost v3
+39978af1ddc6 cpu_input_boost: Fix and refactor max boost logic
+5ac9c7199e09 cpu_input_boost: make the userspace module param vars static
+df1cbfbd91ca kernel: Boost all CPUs to the max when userspace launches an app
+515198a136a9 cpu_input_boost: Add API for boosting all CPUs to max frequency
+e22c48612705 drm: msm: dsi-display: remove OP's QoS shit
+38a832c0e150 PM / sleep: Kill off OnePlus's QoS framework
+63351d2ee857 cpu_input_boost: expose input freqs and duration to userspace
+8cd14242ec94 defconfig: Enable CPU_INPUT_BOOST
+66c25a6ffe0f cpu_input_boost: Add ability to choose minimum frequency for big cluster
+950acf52ddd6 cpu_input_boost: add an option to choose a custom boost finish return freq for the LP cluster
+d4872a7a148f drm: msm: sde: Boost CPU when a new frame is ready to be committed
+ccf0e765b793 cpufreq: Kill userspace CPU boosting entirely
+e38e46f42a37 cpu_input_boost: Introduce driver for event-based CPU boosting
+fb1480e78698 msm: performance: prevent the driver from handling userspace boosts
+f4ae00d35138 fingerprint: fpc1020: Mark IRQ as performance critical
+383dc8113df8 drm: msm: Mark IRQ and important kthreads as performance critical
+d93ce734ece9 msm: kgsl: Mark IRQ and worker thread as performance critical
+a4b17d15b856 kernel: Improve performance critical IRQ framework
+5631400f1c91 kernel: Force trivial, unbound kthreads onto low-power CPUs
+327e193719ac kernel: Add API to mark IRQs and kthreads as performance critical
+bff4a90ec6a6 msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake
+316de003ee1b msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input
+b79511580cca defconfig regenerate
+f118b6a5a88d sched: tune: introduce STUNE_ASSIST[v2]
+efceb977e776 mm: Change max readahead size to 64 KiB
+5ec6e9c02297 sched/tune: increase BOOSTGROUPS_COUNT to 6
+
+   * packages/apps/NitrogenSettings/
+8dbd1a7 Force Expanded Notifications [2/2]
+
+=======================
+     2020/03/24
+=======================
+
+
+   * frameworks/base/
+3c3c43d1729 QS: Add and use Bluetooth Panel instead of full Settings
+fbf62b4e837 SystemUI: Also use mobile data panel on celular qs tile
+233a738c806 SystemUI: fix notification light pulse for repeating notifications
+db0addc0d3f QuickTile: Use long click intent for all qs modes
+8706bc5a68b Revert "base: SystemUI: enable qs DUAL_TARGET_ALLOWED = true"
+2a7053fbe67 Revert "Quick statusbar tiles header: expand panel on longpress for details view"
+75c8f82294c Gesture nav extended swipe: show a double arrow when almost triggered
+64544245af1 Revert "Gesture nav extended swipe: show a double arrow when almost triggered"
+4bfff1fc322 Revert "Extended swipe double arrow: don't show if option is disabled"
+b7ca2edfcf2 Force Expanded Notifications [1/2]
+
+   * packages/apps/Settings/
+057f754e70 Settings: panels: Fix pair new device icon
+665e837912 Settings: panels: Add pair new to BT panel slice
+ff0a05d442 Settings: panels: Add Bluetooth panel
+5e5131ebb6 Settings: panels: Fix data usage display on mobile panel
+53ce6a0fa3 Settings: panels: Improvements
+4616efdf9d Settings: panels: Add Mobile Data panel
+
+=======================
+     2020/03/23
+=======================
+
+
+   * device/oneplus/sdm845-common/
+4941db6 Bring Pixel3 livewallpapers
+
+   * frameworks/base/
+d86c58711b3 Extended swipe double arrow: don't show if option is disabled
+b11aed907d7 Gesture nav extended swipe: show a double arrow when almost triggered
+2ecef590d90 QS: Use Mobile Data panel for CellularTile
+5c09499ecf3 QS: Add and use Mobile Data panel
+8aa30222870 QS: Use Settings.Panel intents for WiFi and NFC
+
+=======================
+     2020/03/22
+=======================
+
+
+=======================
+     2020/03/21
+=======================
+
+
+   * kernel/oneplus/sdm845/
+5886a306830d Merge pull request #184 from android-linux-stable/oneplus/SDM845_Q_10.0
+
+=======================
+     2020/03/20
+=======================
+
+
+   * kernel/oneplus/sdm845/
+22f7ace73373 Merge 4.9.217 into oneplus/SDM845_Q_10.0
+10a20903d7ac Linux 4.9.217
+0bde22da659c ipv4: ensure rcu_read_lock() in cipso_v4_error()
+ff58bb340c43 mm: slub: add missing TID bump in kmem_cache_alloc_bulk()
+ed14ef08c55a ARM: 8958/1: rename missed uaccess .fixup section
+3a4c51d02e70 ARM: 8957/1: VDSO: Match ARMv8 timer in cntvct_functional()
+e06aeb9f3da6 jbd2: fix data races at struct journal_head
+4306259ff6b8 signal: avoid double atomic counter increments for user accounting
+d2a49017c249 mac80211: rx: avoid RCU list traversal under mutex
+4f1547a774dd net: ks8851-ml: Fix IRQ handling and locking
+c0d470e3ec3b cfg80211: check reg_rule for NULL in handle_channel_custom()
+5e953295a8d9 HID: i2c-hid: add Trekstor Surfbook E11B to descriptor override
+479912f78ffc HID: apple: Add support for recent firmware on Magic Keyboards
+f2a18533a69e ACPI: watchdog: Allow disabling WDAT at boot
+22333af249bc perf/amd/uncore: Replace manual sampling check with CAP_NO_INTERRUPT flag
+135075ae4eaf batman-adv: Use explicit tvlv padding for ELP packets
+34673c28f43d batman-adv: Avoid probe ELP information leak
+3c6ed319b82f batman-adv: update data pointers after skb_cow()
+baed34edb061 batman-adv: Don't schedule OGM for disabled interface
+1f9fd18c2025 batman-adv: Avoid free/alloc race when handling OGM buffer
+5841c1bb484f batman-adv: Avoid free/alloc race when handling OGM2 buffer
+5f6dd57c7b50 batman-adv: Fix duplicated OGMs on NETDEV_UP
+3c3e542a40ad batman-adv: Prevent duplicated gateway_node entry
+b081203732b8 batman-adv: Fix multicast TT issues with bogus ROAM flags
+292ddcd9d68e batman-adv: Avoid storing non-TT-sync flags on singular entries too
+9bcfdf4f8fa1 batman-adv: Fix debugfs path for renamed softif
+f7e13c96077a batman-adv: Fix debugfs path for renamed hardif
+0b81edc88189 batman-adv: prevent TT request storms by not sending inconsistent TT TLVLs
+24443bf39b9b batman-adv: Fix TT sync flags for intermediate TT responses
+f4d59337e0b8 batman-adv: Avoid race in TT TVLV allocator helper
+8142ea6bab53 batman-adv: Fix internal interface indices types
+13e6a853099e batman-adv: Fix lock for ogm cnt access in batadv_iv_ogm_calc_tq
+8c69c09f5ede batman-adv: Fix check of retrieved orig_gw in batadv_v_gw_is_eligible
+ea40bc532c52 batman-adv: Always initialize fragment header priority
+0478b59311ab batman-adv: Avoid spurious warnings from bat_v neigh_cmp implementation
+805596e6a807 batman-adv: fix TT sync flag inconsistencies
+f357813e20ff batman-adv: Accept only filled wifi station info
+1c5a456ac64a batman-adv: Use default throughput value on cfg80211 error
+65927b335012 batman-adv: Fix rx packet/bytes stats on local ARP reply
+4ae2c0625ecb batman-adv: Initialize gw sel_class via batadv_algo
+e1244b876d77 batman-adv: Fix transmission of final, 16th fragment
+351f7cbfff97 batman-adv: Fix double free during fragment merge error
+af83aa2e1f27 efi: Add a sanity check to efivar_store_raw()
+11ac2ba035f4 ipv6: restrict IPV6_ADDRFORM operation
+159ba99817a8 iommu/vt-d: Ignore devices with out-of-spec domain number
+1d66a5502feb iommu/vt-d: Fix the wrong printing in RHSA parsing
+cb87b895f146 mwifiex: Fix heap overflow in mmwifiex_process_tdls_action_frame()
+a2ecb2d17b70 netfilter: cthelper: add missing attribute validation for cthelper
+85a7e73aacda nl80211: add missing attribute validation for channel switch
+0a626cd0438c nl80211: add missing attribute validation for beacon report scanning
+d4ffeafda724 nl80211: add missing attribute validation for critical protocol indication
+045bf0978374 iommu/vt-d: Fix a bug in intel_iommu_iova_to_phys() for huge page
+5145afc851ad iommu/vt-d: dmar: replace WARN_TAINT with pr_warn + add_taint
+16d8f5dec5a6 efi: Fix a race and a buffer overflow while reading efivars via sysfs
+b5badebc9e3c ARC: define __ALIGN_STR and __ALIGN symbols for ARC
+3a91d55c921d KVM: x86: clear stale x86_emulate_ctxt->intercept value
+c919b9a14829 gfs2_atomic_open(): fix O_EXCL|O_CREAT handling on cold dcache
+ca9a513b0110 cifs_atomic_open(): fix double-put on late allocation failure
+346ff2f614e5 drm/amd/display: remove duplicated assignment to grph_obj_type
+3772b93dc3bc workqueue: don't use wq_select_unbound_cpu() for bound works
+412c17e2ddd7 iommu/vt-d: quirk_ioat_snb_local_iommu: replace WARN_TAINT with pr_warn + add_taint
+64007a74ac01 virtio-blk: fix hw_queue stopped on arbitrary error
+e9ed467f390d net: phy: fix MDIO bus PM PHY resuming
+529f4b7ad397 cgroup: memcg: net: do not associate sock with unrelated cgroup
+9fc9ba073f67 bonding/alb: make sure arp header is pulled before accessing it
+7a7c8ba58283 slip: make slhc_compress() more robust against malicious packets
+a01b5e507c99 net: fec: validate the new settings in fec_enet_set_coalesce()
+3bd2095b8058 macvlan: add cond_resched() during multicast processing
+2ad8246c4dbe ipvlan: don't deref eth hdr before checking it's set
+8621153cb6c8 ipvlan: do not use cond_resched_rcu() in ipvlan_process_multicast()
+276a875f7124 ipvlan: egress mcast packets are not exceptional
+96ce4520f395 ipvlan: do not add hardware address of master to its unicast filter list
+8079db5d729a ipvlan: add cond_resched_rcu() while processing muticast backlog
+65ff45dfdc63 nfc: add missing attribute validation for vendor subcommand
+0ba5c3ddb59c nfc: add missing attribute validation for SE API
+26623ec1fcd6 team: add missing attribute validation for array index
+c8571e0c2b68 team: add missing attribute validation for port ifindex
+65c9a7a213e4 net: fq: add missing attribute validation for orphan mask
+1abae2c50c67 macsec: add missing attribute validation for port
+76de44ee4d7b nl802154: add missing attribute validation for dev_type
+5869a748587a nl802154: add missing attribute validation
+0b21c9cbf647 fib: add missing attribute validation for tun_id
+285112d5a481 bnxt_en: reinitialize IRQs when MTU is modified
+f120a4000223 r8152: check disconnect status after long sleep
+e5660ee1a35b net: nfc: fix bounds checking bugs on "pipe"
+fc094dab7eb9 net: macsec: update SCI upon MAC address change.
+6d80c781790e ipv6/addrconf: call ipv6_mc_up() for non-Ethernet interface
+6f1aea70c1f8 gre: fix uninit-value in __iptunnel_pull_header
+78604444fb87 cgroup, netclassid: periodically release file_lock on classid updating
+da933d989ff5 net: phy: Avoid multiple suspends
+4ffa65aa2bc5 phy: Revert toggling reset changes.
+dbfc9e987856 NFS: Remove superfluous kmap in nfs_readdir_xdr_to_array
+
+=======================
+     2020/03/19
+=======================
+
+
+=======================
+     2020/03/18
+=======================
+
+
+   * device/oneplus/sdm845-common/
+2ae1d22 DeviceHandler: Extend Silent on Slider to mute media
+
+   * frameworks/base/
+bb434cdbffc SystemUI: Add AmbientDisplay tile
+b8ed20a7aa6 Updates for Navbar tuner
+6afc9e3052c Revert "Remove keyguard_indication_area_overlay"
+e5b6d6dfffe Gestures: Add haptic feedback to left/right long swipe actions
+b894dd8ab47 Add kill app action to navbar actions
+80d14d3bc30 Add kill app action to nav swipe actions [1/3]
+1328f4e6fb1 Add kill-app api (with new fresh implementation)
+7c9c1ebddec Allow long back swipe on bottom screen when launcher is showing [1/2]
+76c13d48f0b Allow a wider back swipe to trigger actions (instead of timeout) [1/2]
+14026f49002 Move actions to ActionUtils [1/2]
+b3f8b2e9108 Allow long back swipe to trigger custom actions/app/activities [1/2]
+edde76c2c59 Navbar: Ensure 2/3 button layout options play nice with gesture navbar
+073e86f4288 Navbar: Switch gesture navbar to new navigation bar key event source
+99719149f54 Navbar: Allow to choose a specific app activity
+e5034c2ccae Navbar: Add custom application actions
+2dd42cc1a5d ActionUtils: Reverse actions for QS and notification panel
+d0515cf1883 Navbar: Add more custom actions
+ff3ed09cf20 Navbar: Add Power menu action
+7202f24e401 Navbar: Add Expand notifications action
+e50c38c93ce Navbar: Remove in-app search action
+79841f40922 Navbar: Add custom actions
+71221e72889 Navbar: Create NavbarUtilities
+21075448137 Navbar: Switch to long press back to unlock screen pinning
+d9d9abbf72b Revert "ScreenPinningRequest: Fix recents button not appearing"
+66583dc63b0 Navbar: Fix button menu action
+ed309798f3e Navbar: Patch navigation bar to emulate hw keys
+206f3491a5e Navbar: Enable custom key event policy
+f2782ee3d3e Navbar: Introduce custom key event policy
+5c69c3ae4ec Navbar: Arrow keys while typing resurrection
+514c574b030 input: introduce new navigation bar key event source
+68d55a283d7 Navbar: Add navbar layout inversion tuning
+fe351765944 Navbar: Fix navbar layout switch and remove old cruft
+433660badc6 Revert "SystemUI: Add navbar layout inversion tuning"
+e3f7d03464d Revert "Fix nav bar leak in SystemUI"
+9459007ecb5 Revert "AoD: Always force brightness updates on pause"
+ae86b9f6eac Revert "Clamp brightness thresholds to the maximum brightness."
+5a4304925ca FODCircleView: adjust dim amount based on changes in brightness
+e4bdef23335 SystemUI: read custom FOD image only when needed
+a05189e95c6 Network traffic: update fontstyle
+fa8216887cd Revert "policy: add more orientation sanity checks"
+355cdff37ae Remove unnecessary battery meter view impl in keyguard statusbar
+6220ab07102 Revert "Enlarge EPSILON to 0.01 for android.display.cts.DisplayTest#testModeSwitch pass"
+8f6e73dafb2 Revert "Allow zero stride"
+142b1f96107 Revert "Reland "Apply front scrim to doze pulsing""
+c888bd6c2cc Revert "Fix AoD front scrim being opaque at DOZE_PULSING."
+78b79bee680 fw/b: Squash of app fw restriction commits
+ae7eca4c731 base: update aod on charge settings if we change options while charging
+f2b290dd20f base: wake from aod on unplug if we show on charging only
+987f35cd8fd Revert "SystemUI: Show charging status in addition to trust granted/transient status"
+c418f47345a GlobalScreenshot: do not capture multiple screenshots simultaneously
+4ac2c29e1e6 Revert "Revert "Screenshot: append app name to filename""
+
+   * manifest/
+f94d681 Track Updater
+cbbd553 Track netd and vendor_support
+d7980f1 Add platform/tools/apifinder
+
+   * packages/apps/NitrogenSettings/
+55e6bc1 [SQUASH]Navbar: Button and gesture settings from DU and ABC ROMS
+
+   * packages/apps/Settings/
+fae63dd1e6 Revert "Skip loading contextual cards if legacy cards are used"
+952e8c6916 Navbar: Add custom application actions
+
+   * vendor/support/
+1d96e75 tobmerged
+f8b299c Bring vendor support for PiXeN-OS
+
+=======================
+     2020/03/17
+=======================
+
+
+=======================
+     2020/03/16
+=======================
+
+
+   * hardware/qcom-caf/sm8150/audio/
+40240eb8 Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into HEAD
+
+   * hardware/qcom-caf/sm8150/display/
+8e200dbf Revert "sdm: Implement SetDisplayBrightness,  GetDisplayBrightness"
+
+   * hardware/qcom-caf/sm8150/media/
+3f74f6e6 Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into HEAD
+
+=======================
+     2020/03/15
+=======================
+
+
+   * hardware/qcom-caf/msm8998/audio/
+5dcabd277 hal: Remove property violating property isolation
+
+   * hardware/qcom-caf/sm8150/display/
+0225c7b3 Merge tag 'LA.UM.8.1.r1-14500-sm8150.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into HEAD
+
+=======================
+     2020/03/14
+=======================
+
+
