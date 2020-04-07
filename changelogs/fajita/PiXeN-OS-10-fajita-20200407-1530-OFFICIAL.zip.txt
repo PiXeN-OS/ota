@@ -1,0 +1,651 @@
+=======================
+     2020/04/07
+=======================
+
+
+   * build/make/
+658891dd6 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/build into HEAD
+
+   * external/asus/stitchimage/
+6227a05 Automatic translation import
+
+   * external/motorola/faceunlock/
+6b03cdf Automatic translation import
+
+   * external/skia/
+b742e51277 Allow to rebind GL texture if AHB content has changed
+
+   * frameworks/av/
+2611ed74b Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/av into 10
+f497f7514 Adapt session API for newly added AudioPolicyService code
+
+   * frameworks/base/
+18e16e30c5a Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/frameworks/base into 10
+6a65ffb28a5 fwb: Port long screenshot implementation from Asus
+a0f33028748 UninstallAlertDialogFragment: Catch IllegalArgumentException
+fcefc9c2464 SystemUI: Allow listening for face only on pin/pass view
+290cc2523fd [3/4] Port face unlock feature
+
+   * hardware/qcom/sdm845/media/
+76abea6e Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/hardware/qcom/sdm845/media into HEAD
+
+   * kernel/oneplus/sdm845/
+62161994312d Update to Radioactive 10.4.6
+
+   * manifest/
+87350a7 April patch
+4db1397 Add pixel-plus remote
+45ef974 Track skia
+0aa0877 manifest: Track some nfc packages from lineage
+ad9dfaf Track libcxx
+1869862 Track Recorder
+d6b25ce Track asus/stitchimage
+c493220 [1/5] Port face unlock feature
+
+   * packages/apps/Recorder/
+59c8873 Fix leftovers missed on 6dc4265535cabf9ee7bade2c793ae0fd090ad753
+ec5242f Automatic translation import
+703f179 Rename string name
+4685fc4 Improve qs tile
+6dc4265 Remove recording when screen off
+2ad0d2a ScreenRecorder: Fix exception handling
+ca44de6 Add missing permission
+ba2df6f Revert "Android studio import"
+9a96230 Android studio import
+b15cb73 Cleanup inline build
+d842285 Refactor for ten
+3196828 Merge "Recorder: Use getExternalFilesDir() for recording paths" into ten
+76dc0a4 Recorder: Drop WRITE_EXTERNAL_STORAGE permission
+
+   * packages/apps/Settings/
+71a5c37c76 Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/packages/apps/Settings into 10
+01970a0135 [4/4] Port face unlock feature
+
+   * packages/providers/DownloadProvider/
+f8c5b181 Automatic translation import
+
+   * packages/services/BuiltInPrintService/
+d396f1d Automatic translation import
+
+   * system/bt/
+09c41b39a Merge tag 'android-10.0.0_r33' of https://android.googlesource.com/platform/system/bt into HEAD
+
+   * vendor/aosp/
+eae99066 Revert "vendor: Build Recorder"
+da8ad34a vendor: Build StitchImage
+fa42fe6e extract_utils: Generate deodexed apk/jar with consistent checksum
+16b928ac extract_utils: Fix doubled path separator
+c64e014d [2/5] Port face unlock feature
+c04876fd vendor: Build Recorder
+e840a9a7 vendor: Revert caf sf commits
+3eddb926 vendor: Improve roomservice fallback branch
+de290f63 vendor: Remove AmbientPlay leftovers
+
+=======================
+     2020/04/06
+=======================
+
+
+   * external/asus/stitchimage/
+5511f5d stitchimage: Imports blobs
+
+   * frameworks/av/
+17eeb0c84 Revert "Revert "Revert "Revert "audiopolicy: Fixes for internal audio recording""""
+ea629a79f media utils: dump audio HAL service before restarting audioserver
+cf7247579 media utils: fix UAF in TimeCheckThread
+c117d6e91 audiopolicy: Fixup 7f84dfd and re-sync with CAF
+310e1567c TimeCheck: fix use of uninitialized variable
+4d515c79d Revert "Revert "Request to reset effect buffer in clearInputBuffer""
+903eeff24 Revert "Revert "audiopolicy: Add AudioSessionInfo API""
+6e429a15c [2/2] av: Remove restrictions for system audio record
+720c7f424 Revert "Revert "Revert "audiopolicy: Fixes for internal audio recording"""
+
+   * frameworks/base/
+036d7b6771f Add SystemSetting class analogous to SecureSetting
+df54bd74763 SystemUI: Fix shouldSkipHeadsUp logic for Gaming Mode
+0c29468eb77 base: Bring back Gaming mode [1/3]
+df74adceaa1 Less boring heads up option: always show alarm clock headsup
+6856267582b Less boring heads up option [1/2]
+bd9bfc90804 SystemUI: Whitelist our recorder on CastController
+6a47078dacd [1/2] base: Remove restrictions for system audio record
+ffe57037e18 AlarmManagerService: Fix FWR before boot completed
+4dc277a0b76 MediaCodec: Release lock before calling onFrameRendered()
+35f167b172f Sanitize Bluetooth device names without regex
+a81961e469e SystemUI: Cleanup pixel live wallpapers changes
+da162020b6e Prevent HandlerThread from losing interrupted flag
+06fbbfaa7c9 AudioService: communicate audio HAL process pids to native audioserver
+130e87b44a0 Audioservice:do not supress music volume adjustment
+38fdaf0fde4 a11y: don't crash the system when illegal component name encounted
+87703c65154 Modify start/stop condition for mScreenDozeTimer.
+e16c43d3ced Don't include the data dir in zygote library paths.
+9e6d9817590 Fix for recycling key events when sending global button broadcast
+940ea4c6439 Make sure the right DND config is used
+832d6565875 Fix wrong variable in AccountManagerService's TokenCache
+2cc23a2f080 Fix ThumbnailUtils thumbnail pts calculation
+
+   * kernel/oneplus/sdm845/
+7770475bc82c Merge branch 'release_Q_custom' of https://github.com/acuicultor/Radioactive_kernel_op6 into HEAD
+
+   * packages/apps/NitrogenSettings/
+9b442de Extend button settings to gaming mode
+09b6f4f NitrogenSettings: GameMode: remove hwkeys toggle on non-hwkeys devices
+13d65b8 NitrogenSettings: Bring back Gaming mode [3/3]
+ec64578 NitrogenSettings: Less boring heads up option [2/2]
+5585b20 Remove volume key to skip music from personalisation
+
+   * packages/apps/Settings/
+f1eb6bf05e Settings: Bring back Gaming mode [2/3]
+
+   * vendor/support/
+79afb60 support: Add SystemSettingsMasterSwitchPreference
+39d369b Bring vendor support for PiXeN-OS
+
+=======================
+     2020/04/05
+=======================
+
+
+   * bootable/recovery/
+716b07f0 otautil: add support for unmounting entire volumes
+34a59085 recovery: allow A/B updater to downgrade
+12acb759 recovery: use ensure_volume_unmounted in format_volume
+66555823 recovery: fixup `Add runtime checks for A/B vs traditional updates`
+ca6dbaaf recovery: Add runtime checks for A/B vs traditional updates
+63ead5c2 recovery: clean up ask_to_continue_unverified
+
+   * device/qcom/sepolicy/
+6441ef2e Merge https://github.com/LineageOS/android_device_qcom_sepolicy into ten
+
+   * external/libcxx/
+d903fff43 Make libc++fs vendor available and as a shared lib
+
+   * external/motorola/faceunlock/
+f79c7fe faceunlock: Import blobs
+
+   * frameworks/base/
+bc19e4ead38 SystemUI: add option to hide pill
+de2dbef158d base: wrap the size of the navigation handle
+7821036fe0d base: allow for customizing the length of the navigation handle [1/2]
+
+   * frameworks/native/
+a720cf46e Add dalvik-heap device-configs for 4/6GB devices
+edb2c974a Change the position of addAndGetFrameTimestamps when queueBuffer
+fef1bb67c Fix testVerifyStatsExternalConsistent case
+77683c8d6 Vulkan: Improve error translation in CreateSwapChainKHR
+dc81bc2b2 add the OMX_VIDEO_CodingAV1 in the OMX_VIDEO_CODINGTYPE
+7a884f30c Vulkan: correctly expose Vulkan entry points
+6443c7612 sensorservice: Register orientation sensor if HAL doesn't provide it
+e634bd964 sensorservice: customize sensor fusion mag filter via prop
+30c306b3a input: Adjust priority
+92553ac54 surfaceflinger: Pass proper transform orientation to setProjection()
+ac3e2a0ac InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+4ed7392d6 PowerManager.h: Define USER_ACTIVITY_FLAG values
+a240e6032 libui: Allow invalid bits from callers conditionally
+7014d618a libui: Allow extension of valid gralloc 1.0 buffer usage bits
+766fed060 Add vendor version for libgui
+
+   * packages/apps/FMRadio/
+80d82e8 Automatic translation import
+
+   * packages/apps/NitrogenSettings/
+ac15ae6 PulseLight: Add one and two minute timeout options
+
+   * packages/apps/Recorder/
+ea41be2 Recorder: Use getExternalFilesDir() for recording paths
+
+   * packages/apps/Settings/
+3757f14a40 Settings: add option to hide pill
+f5af19d331 Settings: allow for customizing the length of the navigation handle [2/2]
+
+   * packages/apps/Snap/
+5cf5e4d73 Automatic translation import
+bbab0ceba Revert "Do not override Camera2 for targets using vanilla AOSP"
+
+   * system/extras/
+264027a5 mkuserimg_mke2fs.py: Package mke2fs.conf
+ae7ef866 verity: Update the build rules for verity tools.
+
+   * system/sepolicy/
+2b28b9bc audioserver: allow audioserver to generate audio HAL tombstones
+
+   * vendor/qcom/opensource/fm-commonsys/
+7ca9b64 Merge https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commonsys into ten
+
+   * vendor/qcom/opensource/power/
+e9bf518 Add Powerhal support for bengal
+ce0c476 Power: Add Camera Powerhal settings for Bitra
+7afd4e3 qvr powerhints
+
+=======================
+     2020/04/04
+=======================
+
+
+   * external/asus/stitchimage/
+0996667 Initial empty repo
+
+   * external/motorola/faceunlock/
+c3ea72e Initial empty repo
+
+   * frameworks/base/
+f63188928c9 FOD: Show fod circle below pattern/pin view
+e990e99619a Doze: Fix glitch when unlocking from pulse
+074e008574b Screen off FOD [1/3] Well technically screen is still turned on ( AOD ) so its kinda cheating but it works as expected since on OLED pixels displaying #000 are turned off
+b08fb63ca70 SystemUI: rework notification pulse check to work for private notifications
+
+   * kernel/oneplus/sdm845/
+f01e75be8be1 Merge pull request #187 from android-linux-stable/oneplus/SDM845_Q_10.0
+
+=======================
+     2020/04/03
+=======================
+
+
+   * device/oneplus/sdm845-common/
+53b308b Bring pixel live wallpaper
+fa8d923 Revert "Bring Pixel3 livewallpapers"
+3b02292 prebuilts: Update Oneplus Camera, Cameraservice, Gallery, Screenrecorder
+b71e803 Import updated Ramdisk changes from Radioactive kernel
+
+   * kernel/oneplus/sdm845/
+02e905a0d6c7 Merge 4.9.218 into oneplus/SDM845_Q_10.0
+
+   * packages/apps/Settings/
+ae4456b8ac Settings: Make aspect ratio hack configable on app level [2/2]
+549ed6ad47 Screen off FOD [2/3]
+6897788d75 Correct string for charging sound
+b72c9262bd Settings: panels: Fix pair new device icon
+af2492ec0f Settings: panels: Add pair new to BT panel slice
+3581aa18f5 Settings: panels: Add Bluetooth panel
+6f435118d6 Settings: panels: Fix data usage display on mobile panel
+5a79fd458d Settings: panels: Improvements
+3889c26349 Settings: panels: Add Mobile Data panel
+fd20b9777a Navbar: Add custom application actions
+e2a3b91a80 Settings: per-app cellular data, vpn and wifi restrictions
+c1e629f33a Revert "Settings: AOD on charging"
+292b667b80 wifi: Remove Qr Code scanner during Modify Network option.
+7285f52c00 PowerUsageSummary: Remove advanced battery menu item
+fb6e245a8a Settings: PowerUsageSummary: open advanced usage on header click
+f0e988167c Settings: AOD on charging
+42cbc45e44 [2/2] Settings: expose auto night mode sunset and sunriuse values on API
+8d023cb514 Settings: Use correct icon for ring volume
+a5cea820a7 Settings: Add switch for linked ring and media notification volumes
+ea3783f823 Revert "Settings: Add switch for linked ring and media notification volumes"
+937882141a Remove theming option from Developer options
+6e8944ce0b move theming under display settings
+4bc0dd4dfe Settings: add optional back gesture vibration tick [2/2]
+256200d1e8 Settings: add fod option in FP location overlay
+25a44e3381 fingerprint: Allow devices to configure sensor location
+e861cd5e96 Enable Wifi MAC Randomization: Developer Options
+0bb5687590 Revert "Remove theming developer settings."
+078e89d09b FeatureFactoryImpl: Implement RoutinesActionBroadcastReceiver
+e356e01827  FeatureFactoryImpl: Initial import of ContextualCardProvider
+014fa1483a FeatureFactoryImpl: Update PowerUsageFeatureProviderGoogleImpl
+c27b7e5115 FeatureFactoryImpl: ApplicationFeatureProviderGoogleImpl: Remove com.android.packageinstaller from keepEnabledPackages
+54c0e3594c Revert "Revert "FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl""
+97573ac777 Allow navigation gesture bar to be hidden [2/2]
+9357992826 Settings: Allow to hide arrow for back gesture [2/2]
+0e29bee633 Revert "Allow to choose lockscreen or Ambient on wake gestures [2/2]"
+866d1d034a Settings: Remove AOSP battery percentage
+feae313c43 Add video preview to Skip track gesture option
+48da26c0ea Settings: Add Volume rocker skip track to Gestures
+0a4037ea16 Aosp Ambient music: allow to pulse on new tracks [2/2]
+a455b4ffe3 Allow to choose lockscreen or Ambient on wake gestures [2/2]
+6dbc8b188f [2/2] Settings: Gesture Navigation: Configure the height of back gesture
+0191fbec45 [2/2] Settings: Gesture Navigation: Configure the height of back gesture
+8a88b03082 Settings: Add switch for linked ring and media notification volumes
+7b4cc2514f Cutout force fullscreen: Disable fast scroller
+f18892b709 Settings: Add hide notch support [3/3]
+bf80209416 Settings: [2/2] Implement cutout force full screen
+4580340015 Revert "FingerprintSettings: Don't listen for fingerprint if fod present"
+1cafb8b031 Revert "Revert "Remove theming developer settings.""
+7ff1a9f89d LiveDisplaySettings: Hide automatic outdoor mode preference on HWC2
+321cdeaac5 LiveDisplaySettings: Reenable display mode preference for outdoor mode
+8e6b60a8cb Settings: Don't index display mode and color temperature on HWC2
+0a2659f9c4 LiveDisplaySettings: Fix outdoor mode preference on hwc2
+bc64e991f1 livedisplay: Don't show display mode and color tempertature on HWC2
+5992a8e58b Settings: Update RU transation for LiveDisplay
+c7a790ce38 LiveDisplay: Add illustration into picture and color adjustment
+55ea211b29 Settings: Changes for LiveDisplay
+
+=======================
+     2020/04/02
+=======================
+
+
+   * kernel/oneplus/sdm845/
+a5ad06fc4b7b Linux 4.9.218
+6d5fd9db8c42 perf map: Fix off by one in strncpy() size argument
+fd08eda55929 arm64: alternative: fix build with clang integrated assembler
+8b1d5cd9c79c net: ks8851-ml: Fix IO operations, again
+ce7656ea221c bpf: Explicitly memset the bpf_attr structure
+c47de1c09553 vt: vt_ioctl: fix use-after-free in vt_in_use()
+ea9df3c8cc1c locking/atomic, kref: Add kref_read()
+6bc9bf78618e vt: vt_ioctl: fix VT_DISALLOCATE freeing in-use virtual console
+35d6480159da vt: vt_ioctl: remove unnecessary console allocation checks
+2e1c84e11095 vt: switch vt_dont_switch to bool
+8c3bc92d11c5 vt: ioctl, switch VT_IS_IN_USE and VT_BUSY to inlines
+fc3d6dd88e21 vt: selection, introduce vc_is_sel
+2839f7afb8cc mac80211: fix authentication with iwlwifi/mvm
+76685e1c142c mac80211: Check port authorization in the ieee80211_tx_dequeue() case
+8f08a2bb2199 media: xirlink_cit: add missing descriptor sanity checks
+be6fdd999bcc media: stv06xx: add missing descriptor sanity checks
+a1ba8819766a media: dib0700: fix rc endpoint lookup
+03e73c3ef017 media: ov519: add missing endpoint sanity checks
+696119fa9f18 libfs: fix infoleak in simple_attr_read()
+482aa95582f9 staging: wlan-ng: fix use-after-free Read in hfa384x_usbin_callback
+eae4e4b9709b staging: wlan-ng: fix ODEBUG bug in prism2sta_disconnect_usb
+8b9ab9fd623c staging: rtl8188eu: Add ASUS USB-N10 Nano B1 to device table
+2236571434af media: usbtv: fix control-message timeouts
+d36a039d703b media: flexcop-usb: fix endpoint sanity check
+edc87d9f7f76 usb: musb: fix crash with highmen PIO and usbmon
+a2f1111f2728 USB: serial: io_edgeport: fix slab-out-of-bounds read in edge_interrupt_callback
+4826a0bef66e USB: cdc-acm: restore capability check order
+ce6edbf07ac0 USB: serial: option: add Wistron Neweb D19Q1
+251acc898910 USB: serial: option: add BroadMobi BM806U
+ae1050f4726c USB: serial: option: add support for ASKEY WWHC050
+aae6b58ce74d tools: Let O= makes handle a relative path with -C option
+fbd5896b898c Input: raydium_i2c_ts - fix error codes in raydium_i2c_boot_trigger()
+9ff4173c7648 Input: raydium_i2c_ts - use true and false for boolean values
+758156577e0a vti6: Fix memory leak of skb if input policy check fails
+282fd1fb2ff8 netfilter: nft_fwd_netdev: validate family and chain type
+86e98ce7de08 xfrm: policy: Fix doulbe free in xfrm_policy_timer
+c2e254ef344c xfrm: add the missing verify_sec_ctx_len check in xfrm_add_acquire
+fa40d12e2f50 xfrm: fix uctx len check in verify_sec_ctx_len
+0807f59465b3 vti[6]: fix packet tx through bpf_redirect() in XinY cases
+cc24d74e50d2 genirq: Fix reference leaks on irq affinity notifiers
+e52d8aff2501 mac80211: mark station unauthorized before key removal
+95b526e711ae scsi: sd: Fix optimal I/O size for devices that change reported values
+8e8ab8554aa4 scripts/dtc: Remove redundant YYLOC global declaration
+791b3ea23b9a perf probe: Do not depend on dwfl_module_addrsym()
+7ff9fb22ad10 ARM: dts: omap5: Add bus_dma_limit for L3 bus
+35e50a4f92a6 ARM: dts: dra7: Add bus_dma_limit for L3 bus
+01d5bf949e49 i2c: hix5hd2: add missed clk_disable_unprepare in remove
+2f5432ef98d7 sxgbe: Fix off by one in samsung driver strncpy size arg
+a8351c8a9eb2 mac80211: Do not send mesh HWMP PREQ if HWMP is disabled
+9509c9134b4b scsi: ipr: Fix softlockup when rescanning devices in petitboot
+4fe8dc061a0c dt-bindings: net: FMan erratum A050385
+85e8b90e4e8a cpupower: avoid multiple definition with gcc -fno-common
+14c137ce30cd net: ipv4: don't let PMTU updates increase route MTU
+6be2735f9e50 KVM: VMX: Do not allow reexecute_instruction() when skipping MMIO instr
+03e7234b3e95 hsr: set .netnsok flag
+c669c9376d7e hsr: add restart routine into hsr_get_node_list()
+9bc97bc67f01 hsr: use rcu_read_lock() in hsr_get_node_{list/status}()
+dabbf0e824fa net: mvneta: Fix the case where the last poll did not process all rx
+cc42f986e5de vxlan: check return value of gro_cells_init()
+a1c9b23142ac slcan: not call free_netdev before rtnl_unlock in slcan_open
+93b84b9cc432 NFC: fdp: Fix a signedness bug in fdp_nci_send_patch()
+c4453d283367 net_sched: keep alloc_hash updated after hash allocation
+97a8e7afaee8 net_sched: cls_route: remove the right filter from hashtable
+5e845dc62f38 net: dsa: Fix duplicate frames flooded by learning
+52d58912962e macsec: restrict to ethernet devices
+a6362a9f2039 hsr: fix general protection fault in hsr_addr_is_self()
+594b060252bb Revert "drm/dp_mst: Skip validating ports during destruction, just ref"
+0e68b6894f48 staging: greybus: loopback_test: fix potential path truncations
+d444ed69b471 staging: greybus: loopback_test: fix potential path truncation
+35989bb9edde arm64: smp: fix smp_send_stop() behaviour
+caf411112fce ALSA: hda/realtek: Fix pop noise on ALC225
+95c5383499d6 futex: Unbreak futex hashing
+fb099f3bb477 futex: Fix inode life-time issue
+3251c97f6640 kbuild: Disable -Wpointer-to-enum-cast
+8e22289c9f58 USB: cdc-acm: fix rounding error in TIOCSSERIAL
+7d09cc7bbe80 USB: cdc-acm: fix close_delay and closing_wait units in TIOCSSERIAL
+8c59bdceffbc x86/mm: split vmalloc_sync_all()
+a8a2622689c4 mm, slub: prevent kmalloc_node crashes and memory leaks
+e663542445b8 mm: slub: be more careful about the double cmpxchg of freelist
+62628b866026 memcg: fix NULL pointer dereference in __mem_cgroup_usage_unregister_event
+4866ed92e47f rtc: max8907: add missing select REGMAP_IRQ
+1e99829d8cd5 intel_th: Fix user-visible error codes
+05f7f08e0347 staging/speakup: fix get_word non-space look-ahead
+7be6822e7f05 staging: rtl8188eu: Add device id for MERCUSYS MW150US v2
+bddeb421b755 mmc: sdhci-of-at91: fix cd-gpios for SAMA5D2
+bc823df170e7 iio: magnetometer: ak8974: Fix negative raw values in sysfs
+51d3d6778adf ALSA: pcm: oss: Remove WARNING from snd_pcm_plug_alloc() checks
+e2edae1f9ffc ALSA: pcm: oss: Avoid plugin buffer overflow
+3356e53c860b ALSA: seq: oss: Fix running status after receiving sysex
+1783ff039023 ALSA: seq: virmidi: Fix running status after receiving sysex
+3d53b9e03b4e ALSA: line6: Fix endless MIDI read loop
+a07410ba4df9 USB: serial: pl2303: add device-id for HP LD381
+ad88d8db0ba5 usb: host: xhci-plat: add a shutdown
+c0bd356f2169 USB: serial: option: add ME910G1 ECM composition 0x110b
+517c81ceb477 usb: quirks: add NO_LPM quirk for RTL8153 based ethernet adapters
+55f186fbfcda USB: Disable LPM on WD19's Realtek Hub
+95489cba64a8 altera-stapl: altera_get_note: prevent write beyond end of 'key'
+108ebbc04e89 drm/exynos: dsi: fix workaround for the legacy clock name
+db5cffa22a5f drm/exynos: dsi: propagate error value and silence meaningless warning
+3dd8860bd399 spi/zynqmp: remove entry that causes a cs glitch
+99f0be68c1c4 ARM: dts: dra7: Add "dma-ranges" property to PCIe RC DT nodes
+30942cd983ab powerpc: Include .BTF section
+e0f5fa76696a spi: qup: call spi_qup_pm_resume_runtime before suspending
+
+   * manifest/
+51455e6 Track our gapps and pixelstyle
+d66a25c Track GCC 9.3
+
+   * packages/apps/NitrogenSettings/
+50f86d2 Screen off FOD [3/3]
+
+   * packages/apps/Settings/
+04cdbb5160 FingerprintSettings: Don't listen for fingerprint if fod present
+4adf67b4a1 Prevent null point exception
+2b01bf587d Settings: Respect preference's visibility in VideoPreferenceController, take 2
+b868d7f062 Settings: enable SIM card ringtone only if slot not empty
+cc60508280 Settings: Phone ringtone setting for Multi SIM device [2/3]
+795fc602e6 Add accessibility timeout video and illustration
+39607cc0ce Settings: Use landscape qrcode scanner layout for sw600dp
+1bc79584f5 Remove empty space in tether preference
+d21e98319b Settings: Hide carrier version pref
+14561c1642 Revert "Skip loading contextual cards if legacy cards are used"
+94ac13060e Settings: Fix dismissal card bg color
+55df131781 Settings: Fix QrCamera crash on devices without flash
+991aae67fc Skip loading contextual cards if legacy cards are used
+1a447d2088 fingerprint: Remove unnecessary spacing in enroll layout
+3989184c2c AmbientDisplay: Add custom pref for devices with custom doze packages
+890c27db83 SystemUpdatePreferenceController: Refactor for our OTA app
+e06e8b08da Settings: Append PixelExperience version on build display id
+0b21ef04a7 Revert "FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl"
+b0d5f17a0c Settings: IS_DEBUGGABLE -> IS_ENG
+d5ffc6c225 Settings: Drop custom preferenceFragmentCompatStyle
+56d48ed0eb QS dev tiles: Don't set them to active area
+664ba0ee3b Settings: Check if we have any color modes declared in overlay
+357c1c1c9f BasebandVersionDialogController: Trim duplicated baseband if needed
+460244a6ca WiFi: Remove country code checking.
+3449a088e1 DevelopmentSettings: Disable automatic updates
+1ddfdc5127 storage: Do not allow eject for volumes on non-removable disks
+2e2f28e3cb Remove feedback and bug report stuff
+108c24ab0d Remove the Automatic ota check option but be sure it's disabled
+8773a9f61e Add back arrow to Desktop backup password
+9315f3d22e Revert "DevelopmentSettings: Remove system update and other prefs"
+bca88580c0 Settings: Fix the failing strings
+52c01345d2 Settings: Import Adaptive Battery translations from crosshatch
+16ed61681d FeatureFactoryImpl: Import PowerUsageFeatureProviderGoogleImpl
+f55dfb5ec3 FeatureFactoryImpl: Implement ApplicationFeatureProviderGoogleImpl
+639d31e0c3 FeatureFactoryImpl: Implement SuggestionFeatureProvider
+10657269af FeatureFactoryImpl: Implement SearchFeatureProviderGoogleImpl
+98de6dec54 FeatureFactoryImpl: Implement AccountFeatureProviderGoogleImpl
+0f290e7b4b Settings: Initial implementation of FeatureFactoryImpl from Pixel
+05b4dbe362 Use CUSTOM_FINGERPRINT for Slicedatabasehelper
+de1edff2d8 Revert "Settings: Changelog"
+ae7217decc Revert "Add Nitrogen stuff"
+7b2b6b23c4 Revert "Revert "Remove theming developer settings.""
+
+   * vendor/gapps/
+355f864 Initial commit
+
+   * vendor/pixelstyle/
+d7d9cf4 Revert "Drop overlays for Prebuilt DocumentsUI"
+
+=======================
+     2020/04/01
+=======================
+
+
+   * device/custom/sepolicy/
+2989dfd sepolicy: Add adb_root rules
+d694214 sepolicy: qcom: RIP legacy
+
+   * frameworks/base/
+ac0b2b50516 SystemUI: fix binary clock update
+
+   * system/core/
+bc746fc1e adb: support wait-for- with multiple states.
+e01915e17 libbase: add ConsumePrefix/ConsumeSuffix.
+dda8adb1d adb: fix double close in wait-for-*.
+dcdb7d869 Revert "adb: Add wait-for-online command"
+668ac0f67 fastbootd: hacks for legacy
+505bcfa5b fastbootd: usb: fallback to v1 descriptors
+2c9dca744 reboot: allow opting-in to fastbootd
+
+   * system/update_engine/
+6569cceb Allow skipping timestamp check in certain debug conditions
+
+=======================
+     2020/03/31
+=======================
+
+
+   * device/custom/sepolicy/
+a8296c6 sepolicy: Actually remove sepolicy for lineagehw
+
+   * vendor/qcom/opensource/fm-commonsys/
+cc7dc91 Automatic translation import
+
+=======================
+     2020/03/30
+=======================
+
+
+   * device/qcom/sepolicy/
+c662fab7 Fix broken userdebug_or_eng checks
+
+=======================
+     2020/03/29
+=======================
+
+
+   * vendor/nxp/opensource/sn100x/halimpl/
+e747bcc sn100x: halimpl: ignore autonomous mode writes if the feature is disabled
+
+=======================
+     2020/03/28
+=======================
+
+
+   * vendor/aosp/
+1f692196 Generate changelog manually
+
+=======================
+     2020/03/27
+=======================
+
+
+   * frameworks/base/
+bb420511b55 Keyguard: Fix FOD overlapping with battery text
+539ce4878d5 SystemUI: Keyguard: reduce bottom text size
+85e72670545 Use gradient dialogue for System Reboot
+7fee03ca4aa fwb: Fix issue where back function was not working for Third Party apps.
+39d1755027a SystemUI: Port more Assist things from Pixel SystemUI
+713fa982648 Revert "Add colors to assistant animation"
+ab90b191ed1 Revert "SystemUI: assist: disable old Assistant animations"
+478244075cf SytemUI: fix qs page num calc again
+2a7e4e3483d SystemUI: fix qs page num calc algo
+
+   * kernel/oneplus/sdm845/
+e0933e2b2203 update build version
+
+   * packages/apps/NitrogenSettings/
+a187918 Doze: Fix typo
+
+=======================
+     2020/03/26
+=======================
+
+
+   * device/oneplus/sdm845-common/
+574e9a0 DeviceParts:Add USB-OTG Tile
+ea844ba BC: Build kernel with GCC 9.3
+
+=======================
+     2020/03/25
+=======================
+
+
+   * frameworks/base/
+e3d74ee7ca9 Revert "PowerManager: Add proximity check on wake"
+
+   * kernel/oneplus/sdm845/
+62912732c699 Apply display mode unconditionally after turning on panel.
+ffacf8289c2a drm: msm: Add support for display modes.
+3e908d836301 drm: msm: Restore previous display brightness when enabling display.
+82659991fc65 drm: msm: Add support for high brightness mode (HBM)
+8025a3fc84fe drm: msm: Symlink main DSI display sysfs to its parent (MDSS)
+342566f726ee Update to Radioactive 10.4.5
+929142fd9d36 Makefile:Regenerate
+f2dcfa334f4d Makefile: Properly handle Snapdragon LLVM options
+9a9c606e6f33 Revert "net/wireguard: add wireguard importer"
+5921858242a8 Synchronize codes for Oneplus 6T OxygenOS 10.3.1/ Oneplus 6 OxygenOS 10.3.1
+c853586022b5 asoc: codecs: Fix out of bounds access in register show functions
+5b443a79377f wcd934x: add null checks to prevent crash on hardware variants
+45d86a0c2a77 wcd934x: add speaker gain settings for 6T
+587d66afe412 wcd934x: remove speaker gain settings for 6T
+15564397dfff wcd934x: remove headphone gain options for 6T
+aa77a75e0b94 wcd934x: sound control: reset headphone digital gain to user value
+88fa616cdc09 wcd934x: add sound control
+79c603e3c70f techpack: audio import Synchronize codes for OP6_O2_BETA_30 and OP6T_O2_BETA_30
+add098ab7b2d Revert "techpack: audio: add sources from e8c85e2f03a155d1ee2455e70cf1371a7782770d Synchronize codes for Oneplus 6T OxygenOS 10.0.1/ Oneplus 6 OxygenOS 10.0.1"
+fdafb495e069 Revert "wcd934x: add sound control"
+829606ea99ce Revert "wcd934x: sound control: reset headphone digital gain to user value"
+dcddeb236275 Revert "wcd934x: remove headphone gain options for 6T"
+c34f816f936c Revert "wcd934x: remove speaker gain settings for 6T"
+7fe37f311c5f Revert "wcd934x: add speaker gain settings for 6T"
+5032bfbe3704 Revert "wcd934x: add null checks to prevent crash on hardware variants"
+2f636f58fbfa Revert "treewide: fix GCC 8.1 warnings"
+2c99ea4b6141 Revert "max98927: stop log spam"
+5f062dfa860e Revert "asoc: codecs: Fix out of bounds access in register show functions"
+d8dd3800f52a Revert "techpack: add missing files"
+d1c55839fb8b Revert "Synchronize codes for Oneplus 6T OxygenOS 10.3.1/ Oneplus 6 OxygenOS 10.3.1"
+469c5f0ea8a2 drivers/cpufreq/cpu_input_boost.c : Switch Dynamic Schedtune Boost to a slot-based tracking system
+c7547ac1534e defconfig regenerate
+380569cdb5b8 msm: kgsl: Remove POPP
+19c21386740d devfreq: devbw: Do a full checkout to LA.UM.6.3.r4-04700-sdm845.0
+486ead290c76 defconfig regenerate
+b4b24d039eea schedtune: use more boost slots
+c1eb3d46b0aa drm: msm: sde: Boost cpubw devfreq device when a new frame is ready
+b9bc5225ffb5 kernel: Boost cpubw devfreq device to the max for app launches
+ce9001e94a6c devfreq: Introduce devfreq boost driver
+748bc60eb941 devfreq: devbw: remove more OnePlus's QoS shit code
+6ca164e44b39 ARM: dts: msm8998: Set GPU idle timeout to 64 ms
+4423128a7da2 cpu_input_boost: Destroy workqueue on error path in init
+795a8db12ab4 Decrease time to enter sleep
+efd5820726fa cpu_input_boost: Reset Dynamic SchedTune Boost only if it is currently active
+c8658e6f8290 cpu_input_boost: Implement Dynamic SchedTune Boost v3
+39978af1ddc6 cpu_input_boost: Fix and refactor max boost logic
+5ac9c7199e09 cpu_input_boost: make the userspace module param vars static
+df1cbfbd91ca kernel: Boost all CPUs to the max when userspace launches an app
+515198a136a9 cpu_input_boost: Add API for boosting all CPUs to max frequency
+e22c48612705 drm: msm: dsi-display: remove OP's QoS shit
+38a832c0e150 PM / sleep: Kill off OnePlus's QoS framework
+63351d2ee857 cpu_input_boost: expose input freqs and duration to userspace
+8cd14242ec94 defconfig: Enable CPU_INPUT_BOOST
+66c25a6ffe0f cpu_input_boost: Add ability to choose minimum frequency for big cluster
+950acf52ddd6 cpu_input_boost: add an option to choose a custom boost finish return freq for the LP cluster
+d4872a7a148f drm: msm: sde: Boost CPU when a new frame is ready to be committed
+ccf0e765b793 cpufreq: Kill userspace CPU boosting entirely
+e38e46f42a37 cpu_input_boost: Introduce driver for event-based CPU boosting
+fb1480e78698 msm: performance: prevent the driver from handling userspace boosts
+f4ae00d35138 fingerprint: fpc1020: Mark IRQ as performance critical
+383dc8113df8 drm: msm: Mark IRQ and important kthreads as performance critical
+d93ce734ece9 msm: kgsl: Mark IRQ and worker thread as performance critical
+a4b17d15b856 kernel: Improve performance critical IRQ framework
+5631400f1c91 kernel: Force trivial, unbound kthreads onto low-power CPUs
+327e193719ac kernel: Add API to mark IRQs and kthreads as performance critical
+bff4a90ec6a6 msm: kgsl: Only wake GPU upon ioctl receipt when it isn't awake
+316de003ee1b msm: kgsl: Wake GPU upon receiving an ioctl rather than upon touch input
+b79511580cca defconfig regenerate
+f118b6a5a88d sched: tune: introduce STUNE_ASSIST[v2]
+efceb977e776 mm: Change max readahead size to 64 KiB
+5ec6e9c02297 sched/tune: increase BOOSTGROUPS_COUNT to 6
+
+   * packages/apps/NitrogenSettings/
+8dbd1a7 Force Expanded Notifications [2/2]
+
