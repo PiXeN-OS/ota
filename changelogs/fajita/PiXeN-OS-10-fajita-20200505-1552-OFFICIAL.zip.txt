@@ -1,0 +1,29 @@
+Changelog:
+Merge May Security Patch 10.0.0_r36
+Update to Radioactive 10.5.9 (has merged changes from oos stable 10.3.3 source)
+Update to linux 4.9.221
+Merge 10.3.3 OOS blobs
+Improved Fingerprint on Display for OnePlus 6T (Flickering reduced to nearly 10% )
+Added optional Minimal style Volume expanded panel- Single tap to expand, long press for Media Output (Enabled by default)
+Add OOS style Alert slider toasts (Works only for Silent, Vibrate, Ringer)
+Add option to show ambient display for Off Screen Gestures
+Introduce Adaptive Playback
+Allow to show music heads up on new tracks
+Gestures nav: Add Skip/Previous Song Function
+Add OnePlus 8 pro FOD Animations
+Unlink Notification and ringer volumes by default
+Add Roboto font in Font Styles
+Some Ramdisk updates
+
+Fixes:
+Fix Video calls not working (Now works for JIO and other carriers)
+Fix Notification heads up overlapping with Text Style clock
+Fix Gamepad B Buttons issue (Thanks Team Omnirom)
+Fix Network Restrictions settings crashing and no applying
+Fix delayed triggering of FOD Animations
+Fixed Stuttering of FOD Animations when triggered just after Screen wakeup
+Fix FOD Animations showing sometimes on Homescreen after unlocking
+Fix SanFransisco font not working
+
+There are definitely other things I dont remember right now.
+
