@@ -1,0 +1,37 @@
+JUNE UPDATE 20200602
+
+Merge June Security Patch with Pixel drop features
+Updated to Radioactive kernel 10.6.8
+Update to Linux 4.9.225
+Update ramdisk changes to work best with latest radioactive kernel
+Updated to FOD 1.1 for OnePlus 6T. This brings flicker free experience same as or better than 
+OOS. Thanks to Team Lineage specially TheSarcastic
+Improve FOD animations (Now more smoother and brighter)
+Updated OOS Camera and Gallery from OOS 10.3.4
+Add option for Quick pulldown for QS tiles from Omnirom
+Add option to show/hide/edit Carrier label name in Status bar
+Add RGB accent picker
+Add more preset accent colors
+Add option for center clock when notch hidden
+Organise status bar and quick settings
+settings Add long press intent for Lift to wake tile
+Add option to disable cross for Network icon when data disabled
+Improve overall user experience for device haptic feedback
+Improve vibrate feedback for charging
+Improve haptic feedback for back swipe gesture
+Improve haptic feedback for long swipe back gesture
+Added vibration pattern options for Calls from AOSPA
+Add haptic feedback for Off Screen gestures
+Add alert slider toast for "DND"
+Improve alert slider toasts theming and issues with substratum
+Improve minimal style volume panel and issues with substratum
+
+Fixes
+Fix high brightness issues with Dolby Atmos
+Fix issue with Hide gesture navbar not working when hide pill was enabled (Also improve strings to include hide keyboard bottom space)
+Fix Freeform crashing while moving
+Fix alert slider toasts stuck when device was rotated while toast was showing
+Fix not able to change SIM name
+Fix not able to change Fingerprint name in OnePlus 6T
+Fix FOD Animations running on homescreen when fingerprint pressed and device gets unlocked by Faceunlock
+Fix issues with WiFi cast some users were facing
