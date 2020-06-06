@@ -1,0 +1,8 @@
+I know it's too early for this new build but June 20200602 build had 
+some issues related to stability and performance for some users.
+
+This build fixes those issues.
+
+Fixes
+Fix random reboot issue happening for some users
+Fix stuttering issue happening for some users
