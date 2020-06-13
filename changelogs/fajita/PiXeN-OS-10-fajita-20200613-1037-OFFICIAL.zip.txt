@@ -1,0 +1,24 @@
+June Update 20200613
+
+Changelog
+
+Update to Radioactive kernel 10.7.0
+Update to linux 4.9.226
+Update Pixel apps
+Update Gapps
+Add option to select screenshot type-Normal, Partial, Extended
+Update PowerUsageFeatureProviderGoogleImpl
+Caf merges for telephony
+Add option to select percent inside battery icon
+Added solod circle battery icon
+Add Proxicheck for Lift to wake
+
+
+Fixes
+
+This update should fix issues with random reboot and freezes
+Fix Notification volume row showing sometimes when  minimal style volume is open and volume changed using buttons
+Fix Fod animatioms stutterig when using high res Fodicons
+Fix issue where some area corresponding to FOD icon over launcher, keyboard becomes insensitive to touch
+Fix issues of screen flickering for  AndroidAuto and Screenrecorder introduced in 20200605 update
+Fix DC dimming turning off when device is locked
