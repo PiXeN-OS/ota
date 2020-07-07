@@ -1,0 +1,26 @@
+PiXeN-OS July update 20200707
+
+Changelog
+
+Merge July Security patch 10.0.0_r40
+Update inbuilt Black twrp to 3.4.0 (Thanks mauronofrio, acuicultor, morphine)
+Update to Radioactive kernel 10.7.5
+Merge Linux 4.9.228
+Build kernel with Clang(Adds on more smoothness)
+Improve display color calibration
+Add toggleable OOS style clear all notification button (Thanks 00day0)
+Improve theming for OOS style clear all
+Add new Volte icon from OOS
+Add option to show vowifi icon in status bar
+Add ability to change vowifi icon during wifi call to indicate active sim
+Add Statusbar Brightness control
+Add Animations for Minimal style Volume panel from POSP
+Unlink Long press power haptic from system feedback
+
+Fixes
+Fix oversaturated display color calibration
+Fix dull display color calibration after flashing dolby atmos
+Fix srgb resetting sometimes after device locks
+Fix selected display color calibration not applying after reboot until device locked and unlock
+Fix display color calibration changing after opening google photos and Styles.
+Fix display color calibration changing to wide when using FOD on 3rd party apps
