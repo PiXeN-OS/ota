@@ -1,0 +1,13 @@
+PiXeN-OS July update 20200716
+
+Changelog
+
+Improve Autobrightness
+Add Ringtone Focus mode
+Update to CAF Bluetooth
+Add Option to Disable SIM
+Add 3 new icon shapes from Android R
+
+Fixes
+Fix issue where Double tapping Status bar to sleep caused brightness change if Status bar brightness control was enabled.
+
