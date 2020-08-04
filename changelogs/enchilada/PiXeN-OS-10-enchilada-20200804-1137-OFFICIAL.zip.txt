@@ -1,0 +1,22 @@
+PiXeN-OS August update 20200804
+
+Changelog
+
+-Update Security patch to August 10.0.0_r41
+-Radioactive Kernel updated to 10.7.7
+-Linux 4.9.232
+-Built with Clang 12
+-Improved Settings Search
+-Show more notification icons with notch hide
+-Improve OOS clear all background
+-Improved autobrightness
+-Improve night light
+-Improve Keyguard status bar
+-Add back, pip, minimize button for freeform
+-Add single tap for OP6t
+-Improve FOD on night light for OP6t
+
+Fixes
+-Fix status bar brightness control when autobrightness was enabled
+-Fix AAC bluetooth codec
+
