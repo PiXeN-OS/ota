@@ -1,0 +1,18 @@
+PiXeN-OS August update 20200824
+
+Changelog
+
+-Radioactive Kernel updated to 10.7.8
+-Linux 4.9.233
+-Update OOS Camera to 3.8.116
+-Update OOS Gallery to 4.0.42
+-Add privacy indicator to show apps using Camera, Mic, Location
+-Add toggle to show privacy indicators in statusbar
+-Add toggle to show privacy indicators in QS Header
+-Add option to show apps trying to get clipboard access
+-Add permission usage bar
+-Disable lockscreen asking for strong authentication every morning when faceunlock is enabled (Also Added toggle to enable it)
+-Added toggle to disable fadeanimation when unlocking with Fingerprint for OP6  (Unlocks same as OOS)
+-Add toggle to hide ringer view from volume panel
+-Added setting to clamp minimum brightness level for adaptive brightness
+-Added toggle to force ambient brightness values irrespective of screen brightness levels
