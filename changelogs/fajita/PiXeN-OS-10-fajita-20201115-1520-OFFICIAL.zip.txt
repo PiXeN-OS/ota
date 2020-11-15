@@ -1,0 +1,7 @@
+PiXeN-OS November update 20201115
+
+Changelog
+-Merge November security patch 10.0.0_r48
+-Radioactive Kernel updated to 10.8.0
+-Linux 4.9.241
+-Add AppLock 1.1 from AOSPA (Thanks team AOSPA)
