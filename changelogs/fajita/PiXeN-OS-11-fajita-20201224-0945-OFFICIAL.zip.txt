@@ -1,0 +1,35 @@
+PiXeN-OS 11 December  update 20201224
+
+Changelog
+
+Update inbuilt TWRP 3.4.0-11 from mauronofrio (Fixes Decryption, still doesnt work with Magisk 21. If you want to flash Magisk v21+, flash TWRP Uninstaller, link in OP)
+
+Fixes
+Fix broken screenshot sound toggle after Decemeber patch
+Fix broken  one click tile select after Decemeber patch
+Fix OOS Cam support
+Fix issues with incoming calls for some users
+Fix issues with BT calling
+Fix Carrier Videocalls
+Fix keyboard bottom space with navbar pill hidden
+Fix Rounded corners with Notch hide
+
+Additions
+Add Minimal style Expanded Volume panel
+Add toggle to hide ringer icon from volume panel
+Add Unlick ringer and notification volume
+Redo Battery styles
+Add option to Move battery to Expanded QS header
+Make Calendar and Battery in QSS clickable
+Add Edgelighting for sensitive notifications
+Add option to hide back gesture arrow
+Add vibration pattern for incoming calls
+Add Ambient and AOD brightness slider
+Add option to show privacy indicators (in statusbar, QS) under privacy settings
+Add Livedisplay support
+Add Adaptive playback
+Add enable Ambient display on new track
+Move Volume key to skip tracks to main settings
+
+New bugs
+OK Google doesnt work
