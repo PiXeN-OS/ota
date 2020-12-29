@@ -1,0 +1,4 @@
+PiXeN-OS December update 20201229
+
+Changelog
+-Merge December security patch 10.0.0_r49
