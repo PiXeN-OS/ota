@@ -1,0 +1,23 @@
+PiXeN-OS 11 January update 20210106
+
+Changelog
+
+Merge January Security patch 11.0.0-R27
+Update Radioactive kernel to 10.8.1
+Merge Linux .249
+
+Fixes
+Fix issues with VolumePanel not getting dismissed
+Fix RTT issues for Verizon Carrier
+Fix Gaming Mode
+Fix Less Boring Headsup
+Fix call connect vibrate toggle
+Fix Vo Only Volte icon
+
+Additions
+Improve rounded corners for OP6T and OP6
+Add Reading mode tile
+Add Statusbar Clock mod
+Add Vowifi icon support
+Add OOS Volte icon from OP8
+Improve Old style signal icons
