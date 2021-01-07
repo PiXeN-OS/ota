@@ -1,0 +1,8 @@
+PiXeN-OS 10 January update 20210107
+
+Changelog
+
+-Merge January security patch 10.0.0_r50
+-Update Radiactive kernel to 10.8.1
+-Merge linux .249
+-Improve corners for Oneplus6
