@@ -1,0 +1,33 @@
+PiXeN-OS 11 January update 20210124
+
+Fixes issues with booting on clean flash introduced in 20210123
+Fixes 3rd party camera issues introduced in 20210123
+
+PiXeN-OS 11 January update 20210123
+
+Changelog
+
+Fixes
+Fix Google Play System Update
+Fix navigation pill in Landscape
+Fix reversed expanded volume arrow for Sam and Viktor icon packs
+Fix inactive WiFi icon state for Viktor icon pack
+Fix lockscreen Mediaart showing even after player is dismissed
+Fix old style mobile icon getting cut in QSS
+Improve location icon padding
+Organise Status bar settings under personalisation
+Fix Quick Unlock for long passwords
+Fix QuickTile layout in landscape when Mediaplayer is showing
+
+Additions
+Redo Quick tiles Rows and Column configuration (Now available under Settings >> personalisation >> QuickSettings)
+Add proximity check for button wake
+Option to block Network and sensor on per app basis
+Add permission bar chart
+Improve privacy indicators (QS header indicator now shows app using those indicators)
+Add status bar brightness control
+Add Custom Carrier Label
+Allow more notification icons with notch hide
+Show estimate along with text in QS with Text only battery
+Add option to show Quick settings with one finger pulldown
+More optimisations and bug fixes
