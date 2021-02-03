@@ -1,0 +1,17 @@
+PiXeN-OS 11 February update 20210203
+
+Changelog
+
+Merge February Security patch 11.0.0_r29
+
+Fixes
+Fix Network "Data" stats not getting recorded
+Fix issue with Banking apps detecting device as rooted (Tested with HomeING Bank and BT pay)
+Fix issue where gestures were not getting detected with Notch hide
+Fix WFD crashing issue
+Fix Vibrate and Alrm icon size in Expanded volume panel
+Some more minor fixes
+
+Additions
+Add per app restriction to WiFi, Mobile data, VPN
+Allow switching to drawable for qs icons (For substratum theming)
