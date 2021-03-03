@@ -1,0 +1,19 @@
+PiXeN-OS 11 March update 20210303
+
+Fix Video play back issues in various apps after March Security Update (Thanks Google)
+Fix SystemUI crash when long press arrow in volukme panel for mediaoutput switch
+
+PiXeN-OS 11 March update 20210302
+
+Changelog
+
+Merge March Security patch 11.0.0_r32
+Add Multi SIM ringtone support
+Improve Advanced reboot option in power menu
+Add support for Extended screenshot and Partial Screenshot with a toggle to switch between Standard Screen shot, Extended screeshot, Partial Screenshot
+Add Extended screenshot and delete chip intent for Standard screenshot
+Show current and new version on APK installation
+
+Fixes
+Further Improve camera issues
+Fix issues with OTA and dirty flash
