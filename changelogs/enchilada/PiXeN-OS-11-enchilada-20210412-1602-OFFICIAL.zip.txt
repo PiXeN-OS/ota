@@ -1,0 +1,9 @@
+PiXeN-OS 11 April update 20210412
+
+Changelog
+
+Merge April Security patch 11.0.0_r34
+Add Applock from AOSPA
+Add Pocket service from AOSPA
+Add FaceUnlock from Pixelexperience ROM (Will need to re-register if already registered)
+Fix default SIM getting reset after reboot
